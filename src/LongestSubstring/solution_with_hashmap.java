@@ -9,7 +9,7 @@ public class solution_with_hashmap {
         int begining = 0;
         for(int end = 0; end < kelime.length(); end++) {
             if(diz.containsKey(kelime.charAt(end))) {
-                begining = diz.get(kelime.charAt(end)) + 1; //Math.max(bas, diz.get(kelime.charAt(end)) + 1);
+                begining = diz.get(kelime.charAt(end)) + 1;
             }
             diz.put(kelime.charAt(end), end);
             length = Math.max(length, end-begining + 1);
